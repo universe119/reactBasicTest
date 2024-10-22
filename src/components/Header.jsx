@@ -7,7 +7,7 @@ export default function Header() {
 
 			<ul className='gnb'>
 				<li>
-					<a href='/members'>MEMBERS</a>
+					<a href='/member'>MEMBER</a>
 				</li>
 				<li>
 					<a href='/post'>POST</a>
