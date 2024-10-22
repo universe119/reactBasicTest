@@ -1,25 +1,27 @@
+import { Link } from 'react-router-dom';
+
 export default function Header() {
 	return (
 		<header className='header'>
 			<h1 className='logo'>
-				<a href='/'>DCODELAB</a>
+				<Link to='/'>DCODELAB</Link>
 			</h1>
 
 			<ul className='gnb'>
 				<li>
-					<a href='/member'>MEMBER</a>
+					<Link to='/member'>MEMBER</Link>
 				</li>
 				<li>
-					<a href='/post'>POST</a>
+					<Link to='/post'>POST</Link>
 				</li>
 				<li>
-					<a href='/gallery'>GALLERY</a>
+					<Link to='/gallery'>GALLERY</Link>
 				</li>
 				<li>
-					<a href='/youtube'>YOUTUBUE</a>
+					<Link to='/youtube'>YOUTUBUE</Link>
 				</li>
 				<li>
-					<a href='/contact'>CONTACT</a>
+					<Link to='/contact'>CONTACT</Link>
 				</li>
 			</ul>
 		</header>
