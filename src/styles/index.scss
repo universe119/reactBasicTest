@@ -1,5 +1,10 @@
 .header {
 	border: 5px solid blue;
+
+	.gnb li a.on {
+		color: hotpink;
+		font-weight: bold;
+	}
 }
 .footer {
 	border: 5px solid red;

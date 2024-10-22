@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
+	const { pathname } = useLocation();
+	console.log(pathname);
+
 	return (
 		<header className='header'>
 			<h1 className='logo'>
@@ -9,19 +12,29 @@ export default function Header() {
 
 			<ul className='gnb'>
 				<li>
-					<Link to='/member'>MEMBER</Link>
+					<Link to='/member' className={pathname === '/member' ? 'on' : ''}>
+						MEMBER
+					</Link>
 				</li>
 				<li>
-					<Link to='/post'>POST</Link>
+					<Link to='/post' className={pathname === '/post' ? 'on' : ''}>
+						POST
+					</Link>
 				</li>
 				<li>
-					<Link to='/gallery'>GALLERY</Link>
+					<Link to='/gallery' className={pathname === '/gallery' ? 'on' : ''}>
+						GALLERY
+					</Link>
 				</li>
 				<li>
-					<Link to='/youtube'>YOUTUBUE</Link>
+					<Link to='/youtube' className={pathname === '/youtube' ? 'on' : ''}>
+						YOUTUBUE
+					</Link>
 				</li>
 				<li>
-					<Link to='/contact'>CONTACT</Link>
+					<Link to='/contact' className={pathname === '/contact' ? 'on' : ''}>
+						CONTACT
+					</Link>
 				</li>
 			</ul>
 		</header>
