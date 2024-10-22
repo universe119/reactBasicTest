@@ -1,14 +1,13 @@
-.header {
-	border: 5px solid blue;
+//common style
+@import 'common/reset';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
 
-	.gnb li a.on {
-		color: hotpink;
-		font-weight: bold;
-	}
-}
-.footer {
-	border: 5px solid red;
-}
-main {
-	border: 5px solid orange;
-}
+//page style
+@import 'pages/home';
+@import 'pages/member';
+@import 'pages/post';
+@import 'pages/gallery';
+@import 'pages/youtube';
+@import 'pages/contact';
