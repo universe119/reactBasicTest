@@ -5,7 +5,7 @@ export default function Header() {
 	console.log(pathname);
 
 	return (
-		<header className='header'>
+		<header>
 			<h1 className='logo'>
 				<Link to='/'>DCODELAB</Link>
 			</h1>
