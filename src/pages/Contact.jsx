@@ -1,7 +1,9 @@
+import Layout from '../components/Layout';
+
 export default function Contact() {
 	return (
-		<main className='contact'>
-			<h2>CONTACT</h2>
-		</main>
+		<Layout title='Contact'>
+			<p>Contact Page</p>
+		</Layout>
 	);
 }

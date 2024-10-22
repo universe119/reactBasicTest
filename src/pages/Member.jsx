@@ -1,7 +1,9 @@
+import Layout from '../components/Layout';
+
 export default function Member() {
 	return (
-		<main className='member'>
-			<h2>MEMBERS</h2>
-		</main>
+		<Layout title='Member'>
+			<p>Member Page</p>
+		</Layout>
 	);
 }
