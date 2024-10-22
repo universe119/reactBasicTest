@@ -1,10 +1,12 @@
+import Footer from './components/Footer';
+import Header from './components/Header';
+
 function App() {
 	return (
-		<div>
-			<h1 className='abc' style={{ color: 'red' }}>
-				Hello
-			</h1>
-		</div>
+		<>
+			<Header />
+			<Footer />
+		</>
 	);
 }
 
