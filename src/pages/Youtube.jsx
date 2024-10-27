@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
 
 export default function Youtube() {
 	//유튜브 데이터를 받을 state와 state변경함수 useState로 생성 이때 초기값을 빈 배열
@@ -28,7 +29,24 @@ export default function Youtube() {
 
 	return (
 		<Layout title='Youtube'>
-			<p>Youtube Page</p>
+			{Vids.map((data, idx) => {
+				return (
+					<article key={idx}>
+						<h3>
+							<Link to={`/detail/${data.snippet.resourceId.videoId}`}>{data.snippet.title.substr(0, 80)}</Link>
+						</h3>
+
+						<div className='txtBox'>
+							<p>{data.snippet.description.substr(0, 150)}</p>
+							<span>{data.snippet.publishedAt.split('T')[0]}</span>
+						</div>
+
+						<div className='picBox'>
+							<img src={data.snippet.thumbnails.high.url} alt={data.snippet.title} />
+						</div>
+					</article>
+				);
+			})}
 		</Layout>
 	);
 }
