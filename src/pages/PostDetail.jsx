@@ -16,7 +16,6 @@ export default function PostDetail() {
 			.then(res => {
 				console.log(res);
 				//글 삭제 완료시 포스트목록 컴포넌트로 강제 이동
-
 				navigate('/post');
 			})
 			.catch(err => console.log(err));

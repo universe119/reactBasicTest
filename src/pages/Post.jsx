@@ -15,6 +15,9 @@ export default function Post() {
 
 	return (
 		<Layout title='Post'>
+			<button>
+				<Link to='/post-add'>Write Post</Link>
+			</button>
 			{Posts.map(post => {
 				return (
 					<h3 key={post.id}>
