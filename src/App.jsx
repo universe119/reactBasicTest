@@ -9,6 +9,7 @@ import Youtube from './pages/Youtube';
 import Home from './pages/Home';
 import PostDetail from './pages/PostDetail';
 import PostAdd from './pages/PostAdd';
+import PostEdit from './pages/PostEdit';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 				<Route path='/post' element={<Post />} />
 				<Route path='/post/:slug' element={<PostDetail />} />
 				<Route path='/post-add' element={<PostAdd />} />
+				<Route path='/post-edit/:slug' element={<PostEdit />} />
 			</Routes>
 
 			<Footer />
