@@ -7,6 +7,7 @@ import Member from './pages/Member';
 import Post from './pages/Post';
 import Youtube from './pages/Youtube';
 import Home from './pages/Home';
+import PostDetail from './pages/PostDetail';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Route path='/youtube' element={<Youtube />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/post' element={<Post />} />
+				<Route path='/post/:slug' element={<PostDetail />} />
 			</Routes>
 
 			<Footer />
