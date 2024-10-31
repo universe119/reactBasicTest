@@ -5,12 +5,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
 	const [Scroll, setScroll] = useState(0);
-
-	// 윈도우 스크롤시 현재 스크롤되는 거리값을 Scroll상태값에 담아주는 함수 생성
-	// 해당 함수를 윈도우 스크롤이벤트 연결
-	// 컴포넌트 언마운트시 스크롤이벤트 해체
-	// 비주얼 컴포넌트에 스크롤값 전달
-	// Visual안쪽에서 전달되는 Scroll값을 h2요소 원하는 스타일 구문에 연동
+	console.log(Scroll);
 
 	// 스크롤 이벤트 핸들러 함수
 	const handleScroll = () => {
