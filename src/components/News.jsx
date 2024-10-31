@@ -1,3 +1,7 @@
-export default function News() {
-	return <div className='news'>News</div>;
+export default function News({ Scroll }) {
+	return (
+		<div className='news'>
+			<h2>{Scroll}</h2>
+		</div>
+	);
 }

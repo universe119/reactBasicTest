@@ -1,3 +1,3 @@
-export default function Pics() {
-	return <div className='pics'>Pics</div>;
+export default function Pics({ Scroll }) {
+	return <div className='pics'>{Scroll}</div>;
 }

@@ -1,7 +1,7 @@
-export default function Visual() {
+export default function Visual({ Scroll }) {
 	return (
 		<div className='visual'>
-			<h2>ALPIACO</h2>
+			<h2>ALPIACO {Scroll}</h2>
 		</div>
 	);
 }
