@@ -25,6 +25,7 @@ export default function Home() {
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll); // 스크롤 이벤트 연결
 		window.addEventListener('resize', handleResize);
+
 		return () => {
 			window.removeEventListener('scroll', handleScroll); // 언마운트 시 스크롤 이벤트 제거
 			window.removeEventListener('resize', handleResize);
@@ -34,8 +35,8 @@ export default function Home() {
 	return (
 		<div ref={ref_wrap}>
 			<Visual Scroll={Scroll}></Visual>
-			<News Scroll={Scroll} pos={ref_posArr.current[1]}></News>
-			<Pics Scroll={Scroll}></Pics>
+			<Pics Scroll={Scroll} pos={ref_posArr.current[1]}></Pics>
+			<News Scroll={Scroll} pos={ref_posArr.current[2]}></News>
 		</div>
 	);
 }
