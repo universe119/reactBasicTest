@@ -6,9 +6,9 @@ export default function Visual({ Scroll }) {
 	};
 
 	const box1St = {
-		// transform: `rotateY(${Scroll}deg)`,
-		// opacity: 1 - Scroll / 800,
-		background: `rgb(${50 + Scroll * 0.1},${50},${50})`
+		transform: `rotateY(${Scroll}deg)`,
+		opacity: 1 - Scroll / 800,
+		background: `rgb(${50 + Scroll * 0.2},${50},${50})`
 	};
 
 	return (
