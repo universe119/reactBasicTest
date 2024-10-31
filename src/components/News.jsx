@@ -1,7 +1,12 @@
 export default function News({ Scroll }) {
 	return (
-		<div className='news'>
-			<h2>{Scroll}</h2>
-		</div>
+		<section className='news'>
+			<h2>POST PREVIEW</h2>
+			<h3>INFORMATION</h3>
+
+			<article></article>
+			<article></article>
+			<article></article>
+		</section>
 	);
 }
